@@ -1,7 +1,7 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
+* 1. Window is the default unless you are strict mode which then will go to undefined
 * 2. 
 * 3. 
 * 4. 
@@ -12,8 +12,16 @@
 // Principle 1
 
 // code example for Window Binding
+'use strict';
 
-// Principle 2
+ function ghost(){
+   console.log(this.boo);
+ }
+ ghost();
+ const boo = '👻';
+
+
+ // Principle 2
 
 // code example for Implicit Binding
 
